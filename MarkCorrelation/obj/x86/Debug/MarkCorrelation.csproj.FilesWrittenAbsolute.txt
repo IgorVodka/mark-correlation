@@ -1,0 +1,5 @@
+/home/uhehesh/MarkCorrelation/MarkCorrelation/MarkCorrelation/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/uhehesh/MarkCorrelation/MarkCorrelation/MarkCorrelation/bin/Debug/MarkCorrelation.exe.mdb
+/home/uhehesh/MarkCorrelation/MarkCorrelation/MarkCorrelation/bin/Debug/MarkCorrelation.exe
+/home/uhehesh/MarkCorrelation/MarkCorrelation/MarkCorrelation/obj/x86/Debug/MarkCorrelation.exe
+/home/uhehesh/MarkCorrelation/MarkCorrelation/MarkCorrelation/obj/x86/Debug/MarkCorrelation.exe.mdb

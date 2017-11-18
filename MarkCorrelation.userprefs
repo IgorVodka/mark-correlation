@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="MarkCorrelation/MarkCorrelation.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MarkCorrelation/Requests/EURequest.cs">
+    <Files>
+      <File FileName="MarkCorrelation/Program.cs" Line="14" Column="27" />
+      <File FileName="MarkCorrelation/Models/Tutor.cs" Line="15" Column="13" />
+      <File FileName="MarkCorrelation/Models/Student.cs" Line="3" Column="26" />
+      <File FileName="MarkCorrelation/Models/Subject.cs" Line="3" Column="33" />
+      <File FileName="MarkCorrelation/Requests/EURequest.cs" Line="21" Column="14" />
+      <File FileName="MarkCorrelation/Requests/LoginRequest.cs" Line="17" Column="10" />
+      <File FileName="MarkCorrelation/Requests/EUMainPageRequest.cs" Line="17" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

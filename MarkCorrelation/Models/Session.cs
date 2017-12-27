@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MarkCorrelation.Models
 {
-    class Session
+    public class Session
     {
         protected Dictionary<string, string> groups;
 

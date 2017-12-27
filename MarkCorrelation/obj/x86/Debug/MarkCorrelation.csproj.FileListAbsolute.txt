@@ -1,5 +1,3 @@
-D:\mark-correlation\MarkCorrelation\obj\x86\Debug\MarkCorrelation.exe
-D:\mark-correlation\MarkCorrelation\bin\Debug\MarkCorrelation.exe
 D:\mark-correlation\MarkCorrelation\bin\Debug\MarkCorrelation.pdb
 D:\mark-correlation\MarkCorrelation\obj\x86\Debug\MarkCorrelation.csprojResolveAssemblyReference.cache
 D:\mark-correlation\MarkCorrelation\obj\x86\Debug\MarkCorrelation.pdb
@@ -17,3 +15,5 @@ D:\mark-correlation\MarkCorrelation\bin\Debug\Mono.Cecil.Mdb.dll
 D:\mark-correlation\MarkCorrelation\bin\Debug\Mono.Cecil.Rocks.dll
 D:\mark-correlation\MarkCorrelation\bin\Debug\Newtonsoft.Json.dll
 D:\mark-correlation\MarkCorrelation\bin\Debug\Newtonsoft.Json.xml
+D:\mark-correlation\MarkCorrelation\bin\Debug\MarkCorrelation.dll
+D:\mark-correlation\MarkCorrelation\obj\x86\Debug\MarkCorrelation.dll

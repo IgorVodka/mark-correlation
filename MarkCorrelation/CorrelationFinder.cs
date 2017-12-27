@@ -7,12 +7,19 @@ using System.Collections.Generic;
 
 namespace MarkCorrelation
 {
-    class MainClass
+    public class CorrelationFinder
     {
-        const string TUTOR_NAME = "Бескровный";
+        protected string TUTOR_NAME;
         protected WebClientEx client;
         protected SessionCache sessionCache;
         protected CorrelationCalculator calculator;
+        protected ILogger logger;
+
+        public CorrelationFinder(string tutorName, ILogger logger)
+        {
+            this.TUTOR_NAME = tutorName;
+            this.logger = logger;
+        }
 
         protected void HandleSemester(SemesterLink semester)
         {
@@ -21,7 +28,7 @@ namespace MarkCorrelation
 
             foreach(var subject in tlpr.Subjects)
             {
-                Console.WriteLine(semester.Name + " =>\n" + "Группа: " 
+                logger.Log(semester.Name + " =>\n" + "Группа: " 
                     + subject.Group + ", предмет " + subject.SubjectName);
 
                 var mpr = new ModulesPageRequest(client, subject.Url);
@@ -30,7 +37,7 @@ namespace MarkCorrelation
 
                 if (tutors.Count > 1 && !tutors[0].Name.Contains(TUTOR_NAME))
                 {
-                    Console.WriteLine(TUTOR_NAME + " не основной преподаватель, пропускаем.");
+                    logger.Log(TUTOR_NAME + " не основной преподаватель, пропускаем.");
                     continue;
                 }
 
@@ -44,15 +51,17 @@ namespace MarkCorrelation
                 );
                 gspr.Perform();
 
+                logger.Log("Найдено оценок: " + gspr.Marks.Count);
+
                 foreach(var mark in gspr.Marks)
                 {
-                    Console.WriteLine("{0} ({1}): {2}", mark.Key.Name, mark.Key.Gender, mark.Value.Value);
+                    logger.Log(String.Format("{0} ({1}): {2}", mark.Key.Name, mark.Key.Gender, mark.Value.Value));
                     this.calculator.AddData(mark.Key, mark.Value);
                 }
             }
         }
 
-        protected void Handle()
+        public void Handle()
         {
             this.calculator = new CorrelationCalculator();
 
@@ -72,28 +81,23 @@ namespace MarkCorrelation
             EUProgressPageRequest euppr = new EUProgressPageRequest(client, eumpr.ProgressLink);
             euppr.Perform();
 
-            Console.WriteLine("Начинаем...");
+            logger.Log("Начинаем...");
 
             var semesters = euppr.SemesterLinks;
+            logger.SetStepsCount(semesters.Count - 1);
+            
             foreach (var semester in semesters)
             {
                 if (semester.Year > 2016)
                     break;
 
                 HandleSemester(semester);
-
-                // TODO: skip all semesters after previous
+                logger.Step();
             }
 
             double result = calculator.ComputeCorrelation();
-            Console.WriteLine("Корреляция: " + result.ToString("F6") + " (+1 это перекос в сторону отличных оценок у девушек, -1 - у парней)");
-
-            Console.ReadKey(true);
-        }
-
-        public static void Main(string[] args)
-        {
-            new MainClass().Handle();
+            // " (+1 это перекос в сторону отличных оценок у девушек, -1 - у парней)
+            logger.LogCorrelation(result);
         }
     }
 }

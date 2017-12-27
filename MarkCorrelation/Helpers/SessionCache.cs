@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MarkCorrelation.Helpers
 {
-    class SessionCache
+    public class SessionCache
     {
         protected Dictionary<int, Session> sessions;
         protected WebClientEx client;

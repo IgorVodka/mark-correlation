@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MarkCorrelation.Helpers
 {
-    class CorrelationCalculator
+    public class CorrelationCalculator
     {
         List<Tuple<Student, Mark>> marks;
 

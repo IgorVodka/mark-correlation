@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MarkCorrelation.Models
 {
-    class SemesterLink
+    public class SemesterLink
     {
         private string link;
         private string name;

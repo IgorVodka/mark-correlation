@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="MarkCorrelation.Exceptions.GroupNotFoundException" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\GroupNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Helpers.CorrelationCalculator" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAEAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\CorrelationCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Helpers.LinkHelper" Collapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIACAAAAEAEA=</HashCode>
+      <FileName>Helpers\LinkHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Helpers.SessionCache" Collapsed="true">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAIAAACAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Helpers\SessionCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Helpers.WebClientEx" Collapsed="true">
+    <Position X="25.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAQAQAAAAAEAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Helpers\WebClientEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Models.Mark" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Models\Mark.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Models.ModulesPage" Collapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ModulesPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Models.SemesterLink" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgABAAAAAAIAAAAAAQAAAAEAAAAAYAAQAAAAEA=</HashCode>
+      <FileName>Models\SemesterLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Models.Session" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAIAA=</HashCode>
+      <FileName>Models\Session.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Models.Student" Collapsed="true">
+    <Position X="25.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Models.Subject" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Subject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Models.SubjectLink" Collapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAAAAAAAAAAAAAAAIAAAAKAAAACAAAAA=</HashCode>
+      <FileName>Models\SubjectLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Models.Tutor" Collapsed="true">
+    <Position X="24" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Tutor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.MainClass" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAABAAAAIAAAAABABEAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.LoginRequest" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAEAA=</HashCode>
+      <FileName>Requests\LoginRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.BaseHtmlRequest" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAQAAAAA=</HashCode>
+      <FileName>Requests\BaseHtmlRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.BaseRequest" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAEAAAABAAgAQgAAEAAAAIAAIAAAAAABAAAAAAAQ=</HashCode>
+      <FileName>Requests\BaseRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.EUMainPageRequest" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAgAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\EUMainPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.EUProgressPageRequest" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAgAAAACAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\EUProgressPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.GroupSessionPageRequest" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAQAACAAAAA=</HashCode>
+      <FileName>Requests\GroupSessionPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.MainPageRequest" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\MainPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.ModulesPageRequest" Collapsed="true">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\ModulesPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.SessionPageRequest" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAwAAAAkAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\SessionPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.TutorListPageRequest" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAgAAAAAAAAAAAAAABAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Requests\TutorListPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Requests.Event.RequestEventArgs" Collapsed="true">
+    <Position X="25.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Event\RequestEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Tests.CorrelationCalculatorTest" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAMAABAAAAAAAIAAAAAAQAAABAAQEAAAAAAIAAAAA=</HashCode>
+      <FileName>Tests\CorrelationCalculatorTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Tests.LinkHelperTest" Collapsed="true">
+    <Position X="25.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAQAAAAAAAAAAAAIAAAACAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\LinkHelperTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Tests.MarkTest" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\MarkTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Tests.SemesterLinkTest" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tests\SemesterLinkTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarkCorrelation.Tests.StudentTest" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Tests\StudentTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MarkCorrelation.Models.MarkResult" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAIAAAAAAAAAAAAIAIAAAAAAABE=</HashCode>
+      <FileName>Models\Mark.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MarkCorrelation.Models.Gender" Collapsed="true">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAABA=</HashCode>
+      <FileName>Models\Student.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

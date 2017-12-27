@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MarkCorrelation.Models
 {
@@ -7,6 +8,8 @@ namespace MarkCorrelation.Models
         public Subject()
         {
         }
+
+        public List<Tutor> Tutors { get; set; }
     }
 }
 

@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -8,6 +9,8 @@
     <RootNamespace>MarkCorrelation</RootNamespace>
     <AssemblyName>MarkCorrelation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,23 +33,67 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.6.5.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.6.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exceptions\GroupNotFoundException.cs" />
+    <Compile Include="Helpers\CorrelationCalculator.cs" />
+    <Compile Include="Helpers\LinkHelper.cs" />
+    <Compile Include="Helpers\SessionCache.cs" />
+    <Compile Include="Models\Mark.cs" />
+    <Compile Include="Models\ModulesPage.cs" />
+    <Compile Include="Models\SemesterLink.cs" />
+    <Compile Include="Models\Session.cs" />
+    <Compile Include="Models\SubjectLink.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Tutor.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Subject.cs" />
-    <Compile Include="Requests\EURequest.cs" />
-    <Compile Include="Helpers\WebClientEx.cs" />
-    <Compile Include="Requests\LoginRequest.cs" />
+    <Compile Include="Requests\BaseHtmlRequest.cs" />
+    <Compile Include="Requests\BaseRequest.cs" />
+    <Compile Include="Helpers\WebClientEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Requests\EUMainPageRequest.cs" />
+    <Compile Include="Requests\EUProgressPageRequest.cs" />
+    <Compile Include="Requests\Event\RequestEventArgs.cs" />
+    <Compile Include="Requests\GroupSessionPageRequest.cs" />
+    <Compile Include="Requests\LoginRequest.cs" />
+    <Compile Include="Requests\MainPageRequest.cs" />
+    <Compile Include="Requests\ModulesPageRequest.cs" />
+    <Compile Include="Requests\SessionPageRequest.cs" />
+    <Compile Include="Requests\TutorListPageRequest.cs" />
+    <Compile Include="Tests\CorrelationCalculatorTest.cs" />
+    <Compile Include="Tests\LinkHelperTest.cs" />
+    <Compile Include="Tests\MarkTest.cs" />
+    <Compile Include="Tests\SemesterLinkTest.cs" />
+    <Compile Include="Tests\StudentTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Requests\" />
-    <Folder Include="Helpers\" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props'))" />
+  </Target>
 </Project>

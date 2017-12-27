@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 
 namespace MarkCorrelation
 {
-    public class LoginRequest : EURequest
+    public class LoginRequest : BaseRequest
     {
         string login;
         string password;

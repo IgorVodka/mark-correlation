@@ -65,7 +65,7 @@ namespace MarkCorrelation
         {
             this.calculator = new CorrelationCalculator();
 
-            LoginRequest lr = new LoginRequest("viea16u008", "dkcrwhat");
+            LoginRequest lr = new LoginRequest("viea16u008", "[password here]");
             lr.Perform();
 
             this.client = lr.Client;
